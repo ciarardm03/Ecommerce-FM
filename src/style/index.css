@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-orange: 26 100% 55%;
+    --primary-pale-orange: 25 100% 94%;
+
+    --neutral-very-dark-blue: 220 13% 13%;
+    --neutral-dark-grayish-blue: 219 9% 45%;
+    --neutral-grayish-blue: 220 14% 75%;
+    --neutral-light-grayish-blue: 223 64% 98%;
+    --neutral-white: 0 0% 100%;
+    --neutral-black: 0 0% 0%;
+  }
+
+  .flex-center{
+    @apply flex justify-center items-center
+  }
+
+  .sub-header{
+    @apply text-[16px] text-primaryOrange uppercase font-semibold;
+  }
+
+  .header{
+    @apply text-5xl text-neutralBlack font-semibold;
+  }
+
+  .paragraph{
+    @apply text-sm text-neutralDarkGrayishBlue leading-7
+  }
+}
+
+@font-face {
+  font-family: 'Kumbh Sans', sans-serif;;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
