@@ -26,10 +26,10 @@ export default function Cart() {
           </p>
         </div>
 
-        <Image src={'./src/assets/svg/icon-cart.svg'} alt={'Logo'} />
+        <Image src={'./src/assets/svg/icon-cart.svg'} alt={'Cart Logo'} />
       </PopoverTrigger>
 
-      <PopoverContent className={clsx([ 'shadow-xl flex flex-col', 'bg-neutralWhite', 'mt-4' ])}>
+      <PopoverContent  className={clsx([ 'shadow-xl flex flex-col', 'bg-neutralWhite', 'mt-4', '-translate-x-[14px]' ])}>
         <h2 className={clsx([ 'font-bold px-sm pt-sm pb-sm tracking-wider' ])}>
           Cart
         </h2>

@@ -24,7 +24,7 @@
   }
 
   .header{
-    @apply text-5xl text-neutralBlack font-semibold;
+    @apply text-3xl md:text-5xl text-neutralBlack font-semibold;
   }
 
   .paragraph{

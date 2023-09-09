@@ -44,11 +44,11 @@ export default function ActionBtn() {
   }
 
   return (
-    <div className={clsx([ 'flex gap-x-sm ', 'mt-sm' ])}>
+    <div className={clsx([ 'flex flex-col sm:flex-row gap-x-sm ', 'mt-sm' ])}>
 
-      <div className={clsx([ 'flex items-center', 'rounded-lg' ])}>
+      <div className={clsx([ 'flex items-center mb-sm md:mb-0', 'rounded-lg' ])}>
         <Button
-          className={'rounded-none disabled:cursor-not-allowed'}
+          className={'rounded-none disabled:cursor-not-allowed w-full'}
           variant={'secondary'}
           disabled={quantity === 1}
           onClick={() => setQuantity(quantity - 1)}
@@ -60,12 +60,12 @@ export default function ActionBtn() {
           />
         </Button>
 
-        <div className={clsx([ 'bg-neutralLightGrayishBlue w-10 h-full flex-center' ])}>
+        <div className={clsx([ 'bg-neutralLightGrayishBlue md:w-10 h-10  flex-center w-full' ])}>
           <h3 className={clsx([ 'text-center text-[18px] text-neutralVeryDarkBlue font-semibold' ])}>{quantity}</h3>
         </div>
 
         <Button
-          className={'rounded-none'}
+          className={'rounded-none  w-full'}
           variant={'secondary'}
           onClick={() => setQuantity(quantity + 1)}
         >

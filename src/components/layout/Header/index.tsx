@@ -4,39 +4,27 @@ import { Image } from '@/components/base/Image'
 import Cart from '@/components/Cart.tsx'
 import { toastInfo } from '@/components/shared/Toast.tsx'
 import React from 'react'
-
-const menus = [
-  {
-    id:1,
-    name: 'Collections',
-  },
-  {
-    id:2,
-    name: 'Men',
-  },
-  {
-    id:3,
-    name: 'Women',
-  },
-  {
-    id:4,
-    name: 'About',
-  },
-  {
-    id:5,
-    name: 'Contact',
-  },
-]
+import { menus } from '@/constants'
+import Sidepanel from '@/components/layout/Sidepanel'
 
 function Header() {
   const [selectedMenu, setSelectedMenu] = React.useState<number>(0)
+  const [openSidePanel, setOpenSidePanel] = React.useState<boolean>(false)
+
   return (
     <>
-      <nav className={clsx([ 'flex items-center justify-between', 'h-[100px] w-full', 'border-b' ])}>
-        <div className={clsx([ 'flex items-center', 'space-x-md  ', 'h-full' ])}>
+      <nav className={clsx(['flex items-center justify-between', 'h-[80px] lg:h-[100px] w-full', 'border-b', 'px-sm lg:px-sm xl:px-0 ' ])}>
+        <div className={clsx([ 'flex items-center', 'first:space-x-sm space-x-md  ', 'h-full' ])}>
+          <Image
+            className={clsx(['lg:hidden', 'mt-1'])}
+            src={'./src/assets/svg/icon-menu.svg'}
+            alt={'Hamburger Icon'}
+            onClick={() => setOpenSidePanel(true)}
+          />
+
           <Image src={'./src/assets/svg/logo.svg'} alt={'Logo'} />
 
-          <div className={clsx([ 'flex-1', 'h-full' ])}>
+          <div className={clsx([ 'hidden', 'lg:flex-1 lg:inline-flex' ])}>
             <ul className={clsx([ 'flex items-center', 'h-full', 'space-x-sm', 'list-none' ])}>
               {
                 menus.map((menu, index) => {
@@ -68,6 +56,8 @@ function Header() {
             </ul>
           </div>
         </div>
+
+        <Sidepanel isOpen={openSidePanel} setIsOpen={setOpenSidePanel}/>
 
         <div className={clsx([ 'flex items-center', 'space-x-md' ])}>
           <Cart/>

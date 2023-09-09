@@ -5,3 +5,8 @@ export type SelectedProductStateType = {
   src: string
   alt: string
 }
+
+export type SidePanelProps = {
+  isOpen: boolean
+  setIsOpen: (value:boolean) => void
+}
