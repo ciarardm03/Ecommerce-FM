@@ -59,7 +59,7 @@ export default function Sidepanel({ isOpen, setIsOpen }: SidePanelProps) {
         <div className={clsx('h-[65px] pt-2.5')}>
           <Image
             className={clsx(['cursor-pointer z-50'])}
-            src={'./src/assets/svg/icon-close.svg'}
+            src={'/assets/svg/icon-close.svg'}
             alt={'Close Icon'}
             onClick={() => setIsOpen(false)}
           />
