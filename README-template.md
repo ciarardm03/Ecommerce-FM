@@ -28,7 +28,7 @@ Users should be able to:
 - View the cart and remove items from it
 
 ### Screenshot
-![](./src/assets/screenshots/desktop.png)
+![](public/assets/screenshots/desktop.png)
 
 ### Links
 
