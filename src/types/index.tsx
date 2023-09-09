@@ -1,6 +1,7 @@
 export type IconProps = Omit<React.DetailedHTMLProps<React.SVGAttributes<SVGElement>, SVGElement>, 'ref'>
 
 export type SelectedProductStateType = {
-  id: number,
+  id: number
   src: string
+  alt: string
 }
