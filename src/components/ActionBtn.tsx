@@ -55,7 +55,7 @@ export default function ActionBtn() {
         >
           <Image
             className={clsx([ 'm-sm', 'cursor-pointer', { 'cursor-not-allowed': quantity === 1 } ])}
-            src={'./src/assets/svg/icon-minus.svg'}
+            src={'/assets/svg/icon-minus.svg'}
             alt={'Minus Icon'}
           />
         </Button>
@@ -69,7 +69,7 @@ export default function ActionBtn() {
           variant={'secondary'}
           onClick={() => setQuantity(quantity + 1)}
         >
-          <Image className={clsx([ 'm-sm', 'cursor-pointer' ])} src={'./src/assets/svg/icon-plus.svg'}
+          <Image className={clsx([ 'm-sm', 'cursor-pointer' ])} src={'/assets/svg/icon-plus.svg'}
                  alt={'Plus Icon'} />
         </Button>
       </div>

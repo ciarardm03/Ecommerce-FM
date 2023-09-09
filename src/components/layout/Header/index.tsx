@@ -17,12 +17,12 @@ function Header() {
         <div className={clsx([ 'flex items-center', 'first:space-x-sm space-x-md  ', 'h-full' ])}>
           <Image
             className={clsx(['lg:hidden', 'mt-1'])}
-            src={'./src/assets/svg/icon-menu.svg'}
+            src={'/assets/svg/icon-menu.svg'}
             alt={'Hamburger Icon'}
             onClick={() => setOpenSidePanel(true)}
           />
 
-          <Image src={'./src/assets/svg/logo.svg'} alt={'Logo'} />
+          <Image src={'/assets/svg/logo.svg'} alt={'Logo'} />
 
           <div className={clsx([ 'hidden', 'lg:flex-1 lg:inline-flex' ])}>
             <ul className={clsx([ 'flex items-center', 'h-full', 'space-x-sm', 'list-none' ])}>
@@ -68,7 +68,7 @@ function Header() {
             'cursor-pointer',
           ])}
           >
-            <AvatarImage src={'./src/assets/images/image-avatar.png'} />
+            <AvatarImage src={'/assets/images/image-avatar.png'} />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>

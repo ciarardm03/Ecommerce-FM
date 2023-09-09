@@ -10,7 +10,7 @@ export const cartAtom = atom<CartType | undefined>(undefined)
 
 export const lightboxAtom = atom<SelectedProductStateType>({
   id: 0,
-  src: '/src/assets/images/image-product-1.jpg',
+  src: '/assets/images/image-product-1.jpg',
   alt: 'Product 1',
 })
 

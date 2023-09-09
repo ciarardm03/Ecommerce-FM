@@ -21,28 +21,28 @@ export default function Carousel() {
       case 0:
         setSelectedProduct({
           id: 0,
-          src: '/src/assets/images/image-product-1.jpg',
+          src: '/assets/images/image-product-1.jpg',
           alt: 'Product 1',
         })
         break
       case 1:
         setSelectedProduct({
           id: 1,
-          src: '/src/assets/images/image-product-2.jpg',
+          src: '/assets/images/image-product-2.jpg',
           alt: 'Product 2',
         })
         break
       case 2:
         setSelectedProduct({
           id: 2,
-          src: '/src/assets/images/image-product-3.jpg',
+          src: '/assets/images/image-product-3.jpg',
           alt: 'Product 3',
         })
         break
       case 3:
         setSelectedProduct({
           id: 3,
-          src: '/src/assets/images/image-product-4.jpg',
+          src: '/assets/images/image-product-4.jpg',
           alt: 'Product 4',
         })
         break
@@ -69,7 +69,7 @@ export default function Carousel() {
         disabled={selectedProduct.id === 0}
         onClick={() => handleAction(selectedProduct.id, true)}
       >
-        <Image src={'src/assets/svg/icon-previous1.svg'} className={'w-[16px] h-[16px]'} alt={'previous icon'}/>
+        <Image src={'/assets/svg/icon-previous.svg'} className={'w-[16px] h-[16px]'} alt={'previous icon'}/>
       </button>
 
 
@@ -78,7 +78,7 @@ export default function Carousel() {
         disabled={selectedProduct.id === 3}
         onClick={() => handleAction(selectedProduct.id, false)}
       >
-        <Image src={'src/assets/svg/icon-next1.svg'} className={'w-[16px] h-[16px]'} alt={'next icon'}/>
+        <Image src={'/assets/svg/icon-next.svg'} className={'w-[16px] h-[16px]'} alt={'next icon'}/>
       </button>
     </div>
   )

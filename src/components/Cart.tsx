@@ -26,7 +26,7 @@ export default function Cart() {
           </p>
         </div>
 
-        <Image src={'./src/assets/svg/icon-cart.svg'} alt={'Cart Logo'} />
+        <Image src={'/assets/svg/icon-cart.svg'} alt={'Cart Logo'} />
       </PopoverTrigger>
 
       <PopoverContent  className={clsx([ 'shadow-xl flex flex-col', 'bg-neutralWhite', 'mt-4', '-translate-x-[14px]' ])}>
@@ -45,7 +45,7 @@ export default function Cart() {
               className={clsx([ 'flex flex-col', ' h-full', 'pb-sm', 'overflow-y-auto' ])}>
 
               <div className={clsx([ 'flex items-center', 'w-full' ])}>
-                <img src={'src/assets/images/image-product-1-thumbnail.jpg'} alt={'Product One'}
+                <img src={'/assets/images/image-product-1-thumbnail.jpg'} alt={'Product One'}
                      className={clsx([ 'h-14', 'mr-2' ])} />
 
                 <div className={clsx([ 'flex flex-col' ])}>
@@ -58,7 +58,7 @@ export default function Cart() {
             </div>
             <Image
               className={clsx([ 'p-sm', 'cursor-pointer', { 'hidden': cartIsEmpty } ])}
-              src={'./src/assets/svg/icon-delete.svg'}
+              src={'/assets/svg/icon-delete.svg'}
               alt={'Delete Icon'}
               onClick={handleDeleteCart}
             />
